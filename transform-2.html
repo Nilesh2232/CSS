@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            transition: all 5s 1s;
+             /* transform: scale(2); */
+             
+        }
+        img:hover{
+            transform: translateX(1000px) ;
+            /* transform: scale(0.5); */
+        }
+        #ease{
+            transition-timing-function: ease;
+        }
+        #linear{
+            transition-timing-function: linear;
+        }
+        #ease-in{
+            transition-timing-function: ease-in;
+        }
+        #ease-out{
+            transition-timing-function: ease-out;
+        }
+
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Ease</legend>
+        <img src="https://i.pinimg.com/originals/be/c8/0e/bec80e28ad9c4cfc3ca32be2cfda7fdf.gif" alt="" height="120px" width="150px"  id="ease">
+    </fieldset>
+
+     <fieldset>
+        <legend>Linear</legend>
+        <img src="https://i.pinimg.com/originals/be/c8/0e/bec80e28ad9c4cfc3ca32be2cfda7fdf.gif" alt="" height="120px" width="150px" id="linear">
+    </fieldset>
+     <fieldset>
+        <legend>Ease-in</legend>
+        <img src="https://i.pinimg.com/originals/be/c8/0e/bec80e28ad9c4cfc3ca32be2cfda7fdf.gif"  alt="" height="120px" width="150px" id="ease-in">
+    </fieldset>
+     <fieldset>
+        <legend>Ease-out</legend>
+        <img src="https://i.pinimg.com/originals/be/c8/0e/bec80e28ad9c4cfc3ca32be2cfda7fdf.gif"  height="120px" width="150px" alt="" id="ease-out">
+    </fieldset>
+</body>
+</html>

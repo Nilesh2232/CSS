@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        .sun{
+
+            background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnVpN2F1bXcxM3RqOGpoeHFwa3l3MmszbWNkcHE3d3F1MWc0bnd2dyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/107KlThVAe0M0w/giphy.webp);
+           background-repeat: no-repeat;
+            
+            background-size: 250px 250px;
+            border: 1px solid;
+            height: 250px;
+            width: 250px;
+            border-radius: 100%;
+           position: absolute;
+           top: 150px;
+           left: 500px;
+          
+        }
+        .moon{
+            height: 250px;
+            width: 250px;
+            border:1px solid;
+            border-radius: 100%;
+            background-color: black;
+            position: relative;
+            animation: moon 10s 2s linear infinite;
+        }
+        @keyframes moon {
+            from{
+                transform: translateX(0px);
+            }
+            to{
+                transform: translateX(300px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sun">
+        <div class="moon"></div>
+    </div>
+</body>
+</html>
